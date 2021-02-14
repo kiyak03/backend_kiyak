@@ -16,20 +16,20 @@ public class DemoFiles {
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String id;
 
-    private String name;
+    private String demoname;
 
-    private String type;
+    private String demotype;
 
     @Lob
-    private byte[] data;
+    private byte[] demodata;
 
     public DemoFiles() {
     }
 
-    public DemoFiles(String name, String type, byte[] data) {
-        this.name = name;
-        this.type = type;
-        this.data = data;
+    public DemoFiles(String demoname, String demotype, byte[] demodata) {
+        this.demoname = demoname;
+        this.demotype = demotype;
+        this.demodata = demodata;
     }
 
     public String getId() {
@@ -37,27 +37,27 @@ public class DemoFiles {
     }
 
     public String getName() {
-        return name;
+        return demoname;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String demoname) {
+        this.demoname = demoname;
     }
 
     public String getType() {
-        return type;
+        return demotype;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setType(String demotype) {
+        this.demotype = demotype;
     }
 
     public byte[] getData() {
-        return data;
+        return demodata;
     }
 
-    public void setData(byte[] data) {
-        this.data = data;
+    public void setData(byte[] demodata) {
+        this.demodata = demodata;
     }
 
 }

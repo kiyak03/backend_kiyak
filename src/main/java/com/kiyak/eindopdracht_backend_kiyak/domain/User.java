@@ -28,7 +28,7 @@ public class User {
     @JoinTable (name = "user_role",
     joinColumns = @JoinColumn(name = "user_id"),
     inverseJoinColumns = @JoinColumn(name = "role_id"))
-    private Set<com.kiyak.eindopdracht_backend_kiyak.domain.Role> roles;
+    private Set<Role> roles;
 
     public User() {
 
@@ -72,11 +72,11 @@ public class User {
         this.password = password;
     }
 
-    public Set<com.kiyak.eindopdracht_backend_kiyak.domain.Role> getRoles() {
+    public Set<Role> getRoles() {
         return roles;
     }
 
-    public void setRoles(Set<com.kiyak.eindopdracht_backend_kiyak.domain.Role> roles) {
+    public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
 }
