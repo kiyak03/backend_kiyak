@@ -6,16 +6,40 @@ public class FileResponse {
     private String url;
     private String type;
     private long size;
+    private String id;
+    private String contenttype;
 
-    public FileResponse(String name, String url, String type, long size) {
+    public FileResponse(String name, String url, String type, long size, String id, String contenttype) {
         this.name = name;
         this.url = url;
         this.type = type;
         this.size = size;
+        this.id = id;
+        this.contenttype = contenttype;
+    }
+
+    public FileResponse() {
+
     }
 
     public String getName() {
         return name;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getContenttype() {
+        return contenttype;
+    }
+
+    public void setContenttype(String contenttype) {
+        this.contenttype = contenttype;
     }
 
     public void setName(String name) {
